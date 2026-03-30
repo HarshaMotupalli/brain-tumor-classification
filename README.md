@@ -10,11 +10,11 @@ This repository contains a deep learning-based brain tumor classification model 
   - Meningioma  
   - Pituitary  
   - No Tumor  
-- Training Dataset: https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset  
+- **Accuracy:** ~96% 
 
 ## Dataset
 - Source: Kaggle Brain Tumor MRI Dataset  
-- Link: https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset  
+- Link: [Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset) from Kaggle  
 - Total images: ~7000+  
 - Format: JPG / PNG  
 
