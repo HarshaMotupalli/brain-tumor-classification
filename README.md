@@ -1,47 +1,37 @@
-# Brain Tumor MRI Classification
+# Brain Tumor MRI Classifier
 
-## Overview
-This project is a deep learning-based system that classifies brain tumors from MRI images. It uses a pretrained DenseNet121 model with transfer learning to identify tumor types.
+This repository contains a deep learning-based brain tumor classification model and a Streamlit web application to test the model on MRI images.
 
-A Streamlit web application is included, allowing users to upload MRI images and get predictions with confidence scores.
-
----
+## Model Details
+- Architecture: DenseNet121 (Transfer Learning)  
+- Input size: 224 × 224 RGB  
+- Classes:
+  - Glioma  
+  - Meningioma  
+  - Pituitary  
+  - No Tumor  
+- Training Dataset: https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset  
 
 ## Dataset
 - Source: Kaggle Brain Tumor MRI Dataset  
 - Link: https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset  
-
-### Details
-- Total images: ~7000  
-- Image type: MRI scans  
+- Total images: ~7000+  
 - Format: JPG / PNG  
 
-### Classes
-- Glioma  
-- Meningioma  
-- Pituitary  
-- No Tumor  
-
----
-
-## Model
-- Model: DenseNet121  
-- Technique: Transfer Learning  
-
-The model extracts features from MRI images and classifies them into four tumor categories.
-
----
+### Structure
+- Training folder  
+- Testing folder  
+- Each class stored in separate directories  
 
 ## Project Workflow
-1. Load dataset  
-2. Preprocess images (resize, normalize)  
+1. Load MRI dataset  
+2. Preprocess images (resize to 224×224, normalize)  
 3. Apply data augmentation  
-4. Train DenseNet121 model  
+4. Train DenseNet121 model using transfer learning  
 5. Evaluate model performance  
-6. Predict tumor type  
-7. Deploy using Streamlit  
-
----
+6. Save trained model  
+7. Deploy using Streamlit dashboard  
+8. Upload image and predict tumor type  
 
 ## Project Structure
 brain-tumor-classifier/
@@ -54,25 +44,18 @@ brain-tumor-classifier/
 │   └── training.ipynb
 └── README.md
 
----
-
-## How to Run
-
-### 1. Clone Repository
-git clone https://github.com/HarshaMotupalli/brain-tumor-classifier.git  
-cd brain-tumor-classifier  
-
-### 2. Create Virtual Environment
+## Setup Instructions
+### 1. Create Virtual Environment
 python -m venv env  
 env\Scripts\activate  
 
-### 3. Install Requirements
+### 2. Install Dependencies
 pip install -r requirements.txt  
 
-### 4. Run Application
+## Running the Application
 streamlit run app.py  
 
----
+The application will open in your browser at http://localhost:8501
 
 ## Output
 - Predicted tumor type  
