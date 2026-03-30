@@ -34,6 +34,7 @@ This repository contains a deep learning-based brain tumor classification model 
 8. Upload image and predict tumor type  
 
 ## Project Structure
+```bash
 brain-tumor-classifier/
 │
 ├── app.py
@@ -43,19 +44,26 @@ brain-tumor-classifier/
 ├── notebooks/
 │   └── training.ipynb
 └── README.md
+```
 
 ## Setup Instructions
 ### 1. Create Virtual Environment
+```bash
 python -m venv env  
-env\Scripts\activate  
+env\Scripts\activate
+```
 
 ### 2. Install Dependencies
-pip install -r requirements.txt  
+```bash
+pip install -r requirements.txt
+``` 
 
 ## Running the Application
-streamlit run app.py  
+```bash
+streamlit run app.py
+``` 
 
-The application will open in your browser at http://localhost:8501
+The application will open in your browser at **http://localhost:8501**
 
 ## Output
 - Predicted tumor type  
