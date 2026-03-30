@@ -42,7 +42,7 @@ brain-tumor-classifier/
 ├── models/
 │   └── brain_tumor_densenet121.keras
 ├── notebooks/
-│   └── training.ipynb
+│   └── braintumorclassifier.ipynb
 └── README.md
 ```
 
